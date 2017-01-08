@@ -29,34 +29,38 @@ html, body{
   display: flex; 
   border: 5px solid green; 
   flex-direction: column;
-  div > div {
-    flex: 1; 
-  }
 }
 
-.events-index-wrap{
-  /*display: inline-flex; 
-   *border only wrawps around content that it needs
-   * */ 
-border: 5px solid red; 
-display: flex; 
-/*min-height: 100vh;  */ 
-/* STAX besides eachother
- * span verticallly to hit height
- * flex-direction: row; 
- * flex-direction:column; 
- * STAX VERTICALLY
- */ 
-/* 
- *
- * nowrap by default 
- flex-direction: column; 
- align-items: center; 
- */
+.event-index-wrap{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start; 
+  border: 5px solid red; 
+  flex: 1; 
+}
 
-/*flex-wrap: wrap; 
-height: 100vh; 
-/* align-items: baseline; alignes bottom of text inside to be all on same line */ 
+.event-list-wrap{
+  display: flex;
+  border: 5px solid purple; 
+  height: 100vh; 
+  flex-direction: row;
+  flex-wrap: wrap; 
+  justify-content: space-between;
+  align-items: center; 
+
+}
+
+.event-list-wrap > div {
+  }
+
+.single-event-wrap{
+  display: flex; 
+  flex-direction: column; 
+  border: 5px solid orange; 
+}
+
+.single-event-wrap > div{
+    flex: 1; 
 }
 
 .box {
@@ -65,25 +69,7 @@ height: 100vh;
   text-align: center;
   text-shadow:4px 4px 0 rgba(0,0,0,0.1);
   padding:10px;
-  /*width: 33.3333333333333333%; 
-  /* width:calc(33.3333333333333333% - 20px);
-   * margin:10px; */
-
-/* distributes evenly */ 
-/*flex: 1; */  
-flex: 1; 
-
 }
 
-/*
-.box1{
-font-size: 300px; 
-}
-.box2{
-font-size: 200px; 
-}
- */
 
-.box3{
-}
 
